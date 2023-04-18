@@ -32,28 +32,6 @@ function addAllFamilyLuckyNumbers(anArray){
 }
 
 //Enter all your code here:
-person.lucky_numbers[3]=33;
-
-var person3={
-    name: "Jimmy",
-    lastname: "Doe",
-    age: 13,
-    gender: "male",
-    lucky_numbers: [ 1,2,3, 4],
-    significant_other: null
-};
-
-family.members.push[person3];
-
-let sumLuckyNumbersP1= person.lucky_numbers[0]+person.lucky_numbers[1]+person.lucky_numbers[2]+person.lucky_numbers[3];
-
-let sumLuckyNumbersP2= person2.lucky_numbers[0]+person2.lucky_numbers[1]+person2.lucky_numbers[2]+person2.lucky_numbers[3];
-
-let sumLuckyNumbersP3= person3.lucky_numbers[0]+person3.lucky_numbers[1]+person3.lucky_numbers[2]+person3.lucky_numbers[3];
-
-sumOfAllLuckyNumbers= sumLuckyNumbersP1+sumLuckyNumbersP2+sumLuckyNumbersP3;
-
-console.log(sumOfAllLuckyNumbers);
 
 
 //Do not make changes below:
