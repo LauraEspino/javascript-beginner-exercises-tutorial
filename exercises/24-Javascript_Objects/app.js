@@ -15,46 +15,33 @@ var person2 = {
     lucky_numbers: [ 2, 4, 6, 8],
     significant_other: person
 };
-
-var family = {
-    lastname: "Doe",
-    members: [person, person2]   //Array of objects, don't forget to add Jimmy
-};
-
-
-function addAllFamilyLuckyNumbers(anArray){
-  let sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
-
-  //To-Do: loop and add; consider nested loops
-  //Hint: use the anArray variable to get all of the lucky numbers
-  
-  return sumOfAllLuckyNumbers;
-}
-
-//Enter all your code here:
-person.lucky_numbers[3]=33;
-
 var person3={
     name: "Jimmy",
     lastname: "Doe",
     age: 13,
     gender: "male",
     lucky_numbers: [ 1,2,3, 4],
-    significant_other: null
+    significant_other: null,
+}
+var family = {
+    lastname: "Doe",
+    members: [person, person2,person3]   //Array of objects, don't forget to add Jimmy
 };
 
-family.members.push[person3];
+function addAllFamilyLuckyNumbers(anArray){
+  let sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
+    for (let i=0; i<anArray.length; i++){
+        for(let p=0; p<anArray[i].lucky_numbers.length;p++){
+        sumOfAllLuckyNumbers += anArray[i].lucky_numbers[p];
+    }
+  //To-Do: loop and add; consider nested loops
+  //Hint: use the anArray variable to get all of the lucky numbers
+}
+  return sumOfAllLuckyNumbers;
+}
 
-let sumLuckyNumbersP1= person.lucky_numbers[0]+person.lucky_numbers[1]+person.lucky_numbers[2]+person.lucky_numbers[3];
-
-let sumLuckyNumbersP2= person2.lucky_numbers[0]+person2.lucky_numbers[1]+person2.lucky_numbers[2]+person2.lucky_numbers[3];
-
-let sumLuckyNumbersP3= person3.lucky_numbers[0]+person3.lucky_numbers[1]+person3.lucky_numbers[2]+person3.lucky_numbers[3];
-
-sumOfAllLuckyNumbers= sumLuckyNumbersP1+sumLuckyNumbersP2+sumLuckyNumbersP3;
-
-console.log(sumOfAllLuckyNumbers);
-
+//Enter all your code here:
+person.lucky_numbers[3]=33;
 
 //Do not make changes below:
 console.log(addAllFamilyLuckyNumbers(family.members)); 
